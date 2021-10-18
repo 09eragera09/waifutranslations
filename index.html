@@ -6,32 +6,45 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 
 </head>
 <body>
 <div class="mainBody">
-    <div class="flexMain">
-        <h1 class="name">Gaurav Gupta</h1>
-        <div class="content">
-            <div class="translation">
-                <h6>JP-to-EN Translation</h6>
-                <p>Bad Translation for Even Worse Dialogue</p>
+    <div class="flexParent">
+        <div class="flexMain">
+            <h1 class="name">Gaurav Gupta</h1>
+            <div class="content">
+                <div class="translation">
+                    <h6>JP-to-EN Translation</h6>
+                    <p>Bad Translation for Even Worse Dialogue</p>
+                </div>
+                <div class="webdev">
+                    <h6>Web Development</h6>
+                    <p>Making Shitty WebApps for Cheap</p>
+                </div>
             </div>
-            <div class="webdev">
-                <h6>Web Development</h6>
-                <p>Making Shitty WebApps for Cheap</p>
-            </div>
-        </div>
-        <div class="contact">
-            <a href="mailto:admin@waifutranslations.com" target="_blank">Contact Me</a>
-            <div class="otherContact">
-                <a href="mailto:admin@waifutranslations.com" target="_blank">Email</a>
-                <a href="https://twitter.com/09eragera09" target="_blank">Twitter</a>
-                <a href="https://github.com/09eragera09/" target="_blank">Github</a>
+            <div class="contact">
+                <a href="mailto:admin@waifutranslations.com" target="_blank">Contact Me</a>
+                <div class="otherContact">
+                    <a href="mailto:admin@waifutranslations.com" target="_blank">Email</a>
+                    <a href="https://twitter.com/09eragera09" target="_blank">Twitter</a>
+                    <a href="https://github.com/09eragera09/" target="_blank">Github</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        var x = 0;
+        var y = 0;
+        setInterval(function(){
+            x+=1;
+            y-=1;
+            $('body').css('background-position', x + 'px ' + y + 'px');
+        }, 14);
+    })
+</script>
 </body>
 </html>
