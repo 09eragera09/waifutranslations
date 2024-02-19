@@ -1,70 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;600&family=BIZ+UDPGothic:wght@400;700&family=Quicksand:wght@400;500;600&display=swap');
 
-html, body { height: 100%; width: 100%;}
 body {
-    background-image: url('../assets/painSip80.png');
-    background-repeat: repeat;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
-.mainBody {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: inherit;
-    align-items: center;
+header {
+    background-color: black;
+    /*height: 50vh;*/
+    color: white;
 }
 
-.flexParent{
-    padding: 60px;
-    background-color: rgba(245,245,245, 0.95);
-    border: 1px solid black;
-    border-radius: 20px;
+.contactButton {
+    text-align: right;
+
 }
 
-.flexMain {
+.contactButton > a {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contactButton > a, .contactButton > a:hover, .contactButton > a:active, .contactButton > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.flexHero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40vh;
+    justify-content: space-around;
+}
+
+.flexTitle {
+    position: relative;
+    font-size: 3rem;
+    z-index: 0;
+    font-family: 'Aleo', serif;
+    font-weight: bold;
+}
+.textShadow {
+    position: absolute;
+    top: -20px;
+    right: -90px;
+    color: #6c757d;
+    z-index: -1;
+    white-space: nowrap;
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.flexHeadings {
+    /*flex-grow: 1;*/
+    width: 100vw;
+    font-size: 1.7rem;
+    font-family: 'Aleo', serif;
+}
+
+.flexHeadings > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+}
+
+.bodyFlex {
+    display: flex;
+}
+.nameplate {
+    width: 15vw;
+    background-color: #121212;
+    color: white;
+}
+
+.flexNameplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Aleo', serif;
+}
+
+.imgContainer {
+    margin: 20px;
+}
+
+.imgContainer > img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.nameplateName {
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.nameplateSocials {
+    display: flex;
+}
+
+.nameplateSocials > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+}
+
+
+.bodyFlex > section {
+    padding: 40px;
+    width: 70vw;
+}
+
+section > div {
+    padding-bottom: 40px;
+}
+
+.pageNav {
+    width: 15vw;
     padding: 30px;
-}
-.name {
-    font-family: 'Lora', serif;
-    font-size: 80px;
-
+    font-family: 'Aleo', serif;
 }
 
-.content * h6 {
-    font-size: 26px;
-    font-weight: normal;
-    margin-top: 10px;
+.pageNav li {
+    padding-bottom: 10px;
 }
-.contact a {
-    color: inherit;
-    font-size: 25px;
-    text-decoration: none;
+
+h3 {
+    font-family: 'Aleo', serif;
 }
-.contact {
-    margin-top: 50px;
-    font-family: 'Lora', serif;
+
+.inProgressHeader {
     text-align: center;
-}
-.contact .otherContact {
-    margin-top: 20px;
-    color: #343d47;
-}
-.otherContact a {
-    margin: 0 15px;
-    font-size: 22px;
-}
-.webdev, .translation {
-    text-align: center;
-}
-
-.content {
-    margin-top: 10px
-}
-
-.content p {
-    font-family: 'Lora', serif;
-
-
+    padding: 10px;
+    background-color: #f3f334;
 }
