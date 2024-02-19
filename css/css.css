@@ -181,5 +181,6 @@ h3 {
         );
         -webkit-background-clip: text;
         color: transparent;
+        transition: color .20s;
     }
 }
