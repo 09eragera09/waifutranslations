@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;600&family=BIZ+UDPGothic:wght@400;700&family=Quicksand:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background: url("../assets/crt.webp") no-repeat center center / cover fixed;
+}
+.mainBody {
+    background: rgba(0, 0, 0, 0.6);
+    color: #eeeeee;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px 20px grey;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover, header a:focus {
+    color: hotpink;
+    text-decoration: none;
+}
+
+.gameElem {
+    width: 100%;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    padding-bottom: 46.73%;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.gameElem:hover, .gameElem:focus {
+    outline: none;
+    box-shadow: 0 0 30px 5px white;
+    border: none;
+}
+
+#FallenGF {
+    background: url("../assets/fallengf.jpg") no-repeat center center / cover;
+}
+#DesertIsland {
+    background: url("../assets/desertisland.jpg") no-repeat center center / cover;
+}
+#Gehenna {
+    background: url("../assets/gehenna.jpg") no-repeat center center / cover;
+}
+#Cuniculus {
+    background: url("../assets/cuniculus.jpg") no-repeat center center / cover;
+}
+#DungeonNTR {
+    background: url("../assets/dungeonNTR.jpg") no-repeat center center / cover;
+}
+#Shachiku {
+    background: url("../assets/shachiku.jpg") no-repeat center center / cover;
+}
+#WTR {
+    background: url("../assets/wtr.jpg") no-repeat center center / cover;
+}
+#Mizuki {
+    background: url("../assets/Mizuki.jpg") no-repeat center center / cover;
+}
+
+.nameplate {
+    width: 15vw;
+    background-color: #121212;
+    color: white;
+}
+
+.flexNameplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Aleo', serif;
+}
+
+.imgContainer {
+    margin: 20px;
+}
+
+.imgContainer > img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 5px white;
+}
+
+
+
+.nameplateName {
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.nameplateSocials {
+    display: flex;
+}
+
+.nameplateSocials > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    padding: 2px;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+}
+
+.modal-content {
+    background: #212529;
+    color: white;
+}
+
+.img-viewer-display img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.img-ribbon img, img-ribbon button {
+    max-width: 15%;
+}
+
+hr {
+    color: white;
+}
+
+.modal .btn-close {
+    color: white !important;
+    background-color: white !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    .img-ribbon img, img-ribbon button {
+        max-width: 30%;
+        padding: 1px;
+    }
+
+    .imgContainer > img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .flexNameplate {
+        margin-left: 18px;
+    }
+}
